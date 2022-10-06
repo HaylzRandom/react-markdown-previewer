@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@400;700&display=swap');
+
+body {
+    background: #e8eaf1;
+    font-size: 18px;
+    font-family: sans-serif, Arial, Helvetica;
+    padding: 2em;
+}
+
+.markdown__container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+}
+
+textarea {
+    background: #eff1f5;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 22px;
+    height: 20vh;
+    width: 60vw;
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+}
+
+.markdown__preview {
+    padding: 0 1rem;
+    height: auto;
+    width: 80vw;
+    border: 1px solid #000;
+    border-radius: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.markdown__preview blockquote {
+    border-left: 3px solid #224b4b;
+    color: #224b4b;
+    padding-left: 5px;
+    margin-left: 25px;
+}
+
+.markdown__preview > p > code {
+    padding: 3px;
+}
+
+.markdown__preview code {
+    background: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.markdown__preview pre {
+    display: block;
+    overflow: auto;
+    background: white;
+    padding: 5px;
+    line-height: 1.2;
+}
+
+.markdown__preview h1 {
+    border-bottom: 2px solid #000;
+}
+
+.markdown__preview h2 {
+    border-bottom: 1px solid #000;
+}
+
+.markdown__preview table {
+    border-collapse: collapse;
+}
+
+.markdown__preview td,
+.markdown__preview th {
+    border: 2px solid #000;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.markdown__preview img {
+    display: block;
+    max-width: 90%;
+    margin: 2rem auto;
+}
